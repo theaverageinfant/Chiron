@@ -1,0 +1,15 @@
+#Goofy ah introduction
+
+
+print("Hello, Spartronics!")
+
+print("This is my first program.")
+
+print("My robot's name is Quagmire.")
+
+print("The only thing Quagmire can do is take 3 steps forward.")
+
+print("Despite my best and hardest efforts, I cannot get Quagmire to take more than 3 steps forward.")
+
+
+#The program's purpose is to dip my feet into python, I think.
