@@ -2,9 +2,9 @@
 # Create and repair one name error and one syntax error in this small program. Write comments describing the symptom, the cause, and your repair. Then make a logic error that still runs and explain how you noticed it.
 # Write your attempt below. See the course page for expected results.
 robot_name = "Quagmire"
-print("Robot:", robot_nme)
+print("Robot:", robot_name)
 
 leg_name = "leg"
-print("screw programming autocorrect:", leg_name
+print("screw programming autocorrect:", leg_name)
 
-poo poo
+#poo poo
