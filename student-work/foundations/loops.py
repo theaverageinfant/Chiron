@@ -8,7 +8,6 @@ for sample in range(1, 5):
 print("Finished:", total)
 
 timetotal = 3
-for time in range(3):
-    timetotal = timetotal - time
-    print("Countdown:", timetotal)
-print("Finished:", timetotal)
+while count > 0:
+    print(count)
+    count = count - 1
