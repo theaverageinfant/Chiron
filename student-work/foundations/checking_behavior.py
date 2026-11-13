@@ -16,11 +16,11 @@ print("All request checks passed.")
 
 
 def intake_output(request, enabled, has_piece):  # -> request 
-    if not enabled:
+    if not enabled or (has_piece and request > 0):
         return 0.0
     if has_piece and request > 0:
         return 0.0
-    return request
+    return clamp_request(request)
 
 print(intake_output(0.5, True, False))
 print(intake_output(0.5, True, True))
@@ -31,4 +31,7 @@ assert intake_output(0.5, True, False) == 0.5
 assert intake_output(0.5, True, True) == 0.0
 assert intake_output(-0.5, True, True) == -0.5
 assert intake_output(-0.5, False, True) == 0.0
+assert intake_output(0.5, False, False) == 0.0
+assert intake_output(2.0, True, False) == 1.0
+assert intake_output(-2.0, True, True) == -1.0
 print("All intake checks passed.")
